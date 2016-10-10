@@ -20,7 +20,7 @@ angular.module('ion-sticky', ['ionic'])
                 var createStickyClone = function ($element) {
                     clone = $element.clone().css({
                         position: 'absolute',
-                        top: $ionicPosition.position(scroll).top + "px", // put to top
+                        top: 119 + "px", // $ionicPosition.position(scroll).top + "px", // put to top
                         left: 0,
                         right: 0
                     });
@@ -74,7 +74,7 @@ angular.module('ion-sticky', ['ionic'])
                             createStickyClone(angular.element(active));
                     }
                     //console.log(performance.now());
-                }, 400);
+                }, 200);
                 scroll.on('scroll', function (event) {
                     updateSticky();
                 });
