@@ -74,7 +74,7 @@ angular.module('ion-sticky', ['ionic'])
                             createStickyClone(angular.element(active));
                     }
                     //console.log(performance.now());
-                }, 200);
+                }, 400);
                 scroll.on('scroll', function (event) {
                     updateSticky();
                 });
